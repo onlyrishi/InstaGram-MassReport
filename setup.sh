@@ -47,19 +47,19 @@ echo " "
     read ch
    if [ $ch -eq 1 ];then
         cd $HOME
-        cd InstaReport
+        cd InstaGram-MassReport
         python ReportBot.py
 
         exit
     elif [ $ch -eq 2 ];then
         cd $HOME
-        cd InstaReport
+        cd InstaGram-MassReport
         python help.py
 
         exit
     elif [ $ch -eq 3 ];then
         cd $HOME
-        cd InstaReport
+        cd InstaGram-MassReport
         python about.py
 
         exit
@@ -68,8 +68,8 @@ echo " "
         echo -e "\e[1;34m Downloading Latest Files..."
         cd $HOME
         rm -rf InstaReport
-        git clone https://github.com/Crevils/InstaReport
-        cd InstaReport
+        git clone https://github.com/onlyrishi/InstaGram-MassReport
+        cd InstaGram-MassReport
         bash setup.sh
      
         exit
